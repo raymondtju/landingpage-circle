@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 
 import BrandLogo from "/public/images/brand-logo.png";
-import Layout from "@/Layout";
+import Layout from "@/components/Layout";
 
 export default function Brand() {
   return (

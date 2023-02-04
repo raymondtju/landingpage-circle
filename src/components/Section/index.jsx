@@ -5,7 +5,7 @@ import Image1 from "/public/images/section-image-1.png";
 import Image3 from "/public/icons/section-image-3.svg";
 import Smallmoon from "/public/icons/small-moon.svg";
 import Image from "next/image";
-import Layout from "@/Layout";
+import Layout from "@/components/Layout";
 import Card from "../Card";
 import { ArrowRightIcon } from "@heroicons/react/24/solid";
 
