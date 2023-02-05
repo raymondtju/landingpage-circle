@@ -3,6 +3,9 @@ import { Inter } from "@next/font/google";
 import Header from "@/components/Header";
 import Brand from "@/components/Brand";
 import Section from "@/components/Section";
+import Layout from "@/components/Layout";
+import TestimonialSection from "@/components/TestimonialSection";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,10 +18,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${inter.className} pb-10`}>
+      <main className={`${inter.className} pb-10 relative`}>
         <Header />
         <Brand />
-        <Section />
+        <Layout>
+          <Section />
+        </Layout>
+        <TestimonialSection />
+        <Footer />
       </main>
     </>
   );
