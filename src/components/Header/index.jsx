@@ -4,6 +4,7 @@ import Image from "next/image";
 
 import Moon from "/public/icons/moon.svg";
 import Bg2 from "/public/images/bg-2.png";
+
 import HeaderImage from "/public/images/header.png";
 import Button from "../Button";
 
@@ -18,11 +19,9 @@ export default function Header() {
       <Image
         src={Bg2}
         alt="bg2"
-        className="absolute bg-cover w-full max-w-full overflow-hidden top-0 -z-[2]"
+        className="absolute w-full max-w-full overflow-hidden -z-[2]"
       />
-
       <Navbar className="z-0" />
-
       <div className="mx-auto max-w-[1440px] z-0">
         <div className="mx-[80px]">
           <div className="w-6/12 mt-[66px]">
