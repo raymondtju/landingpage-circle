@@ -8,7 +8,10 @@ export default function Document() {
       <body className="text-white bg-background">
         <Main />
         <NextScript />
-        <script src="/node_modules/flowbite/dist/flowbite.min.js" type="script"></script>
+        <Script
+          src="/node_modules/flowbite/dist/flowbite.min.js"
+          strategy="beforeInteractive"
+        ></Script>
 
         {/* <Script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.3/flowbite.min.js"></Script> */}
       </body>
