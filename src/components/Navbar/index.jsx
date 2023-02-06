@@ -1,67 +1,80 @@
 import React from "react";
 import "flowbite";
-import Image from "next/image";
 
-import {
-  ArrowSmallRightIcon,
-  Bars3BottomRightIcon,
-} from "@heroicons/react/24/solid";
-
+import { ArrowSmallRightIcon } from "@heroicons/react/24/solid";
 import Link from "next/link";
-import Layout from "../Layout";
-import HeaderImage from "/public/images/header.png";
-import Circle from "/public/icons/Circle.svg";
 
 export default function Navbar() {
   return (
-    <Layout>
-      <nav className="py-5">
-        <div className="flex flex-wrap items-center justify-between text-base font-medium">
-          <Image src={Circle} alt="logo" className="" />
-
+    <div className="flex items-center h-[90px]">
+      <div className="w-[1440px] mx-auto">
+        <div className="flex items-center justify-between mx-auto w-[88%] text-base font-medium">
+          <div className="items-center flex">Class.</div>
           <div className="flex lg:order-2">
-            <button className="lg:p-3 p-1 lg:px-6 px-3 rounded-lg bg-[#151925] ring-[#B3FFAB] lg:text-base text-sm ring-2 flex flex-row items-center gap-1">
+            <button className="p-3 px-6 rounded-lg bg-[#151925] ring-[#B3FFAB] ring-2 flex flex-row items-center gap-1">
               Lets Building - Its Free
-              <ArrowSmallRightIcon className="w-6 h-6" />
+              <ArrowSmallRightIcon className="w-6 h-6 stroke-2" />
             </button>
             <button
-              data-collapse-toggle="hehe"
+              data-collapse-toggle="navbar-cta"
               type="button"
-              className="inline-flex items-center p-2 ml-2 text-sm text-gray-500 rounded-lg lg:hidden"
-              aria-controls="hehe"
+              className="inline-flex items-center ml-2 p-2 text-sm text-gray-500 rounded-lg lg:hidden"
+              aria-controls="navbar-cta"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3BottomRightIcon className="w-6 h-6" />
+              <svg
+                className="w-6 h-6"
+                aria-hidden="true"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
             </button>
           </div>
-          <div className="hidden w-full lg:flex lg:w-auto lg:order-1" id="hehe">
-            <ul className="flex flex-col float-right py-4 px-8 pr-4 mt-4 gap-y-1 text-right lg:bg-none bg-[#151925] rounded-lg lg:flex-row lg:space-x-6 lg:mt-0 lg:font-medium">
-              <li className="transition-transform duration-300 hover:scale-95">
+          <div
+            className="items-center justify-between hidden lg:flex lg:order-1"
+            id="navbar-cta"
+          >
+            <ul className="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg lg:flex-row lg:space-x-6 lg:mt-0 lg:font-medium lg:border-0">
+              <li>
                 <Link href="">How It Works?</Link>
               </li>
-              <li className="transition-transform duration-300 hover:scale-95">
+              <li>
                 <Link href="">Develop</Link>
               </li>
-              <li className="transition-transform duration-300 hover:scale-95">
+              <li>
                 <Link href="">Features</Link>
               </li>
-              <li className="transition-transform duration-300 hover:scale-95">
+              <li>
                 <Link href="">Docs</Link>
               </li>
-              <li className="transition-transform duration-300 hover:scale-95">
+              <li>
                 <Link href="">Result</Link>
               </li>
               <li>
                 <Link href="">Blog</Link>
               </li>
-              <li className="transition-transform duration-300 hover:scale-95">
+              <li>
                 <Link href="">About</Link>
               </li>
             </ul>
           </div>
+
+          {/* <button className="p-3 px-6 rounded-lg bg-[#151925] ring-[#B3FFAB] ring-2 flex flex-row items-center gap-1">
+            Lets Building - Its Free
+            <ArrowSmallRightIcon className="w-6 h-6 stroke-2" />
+          </button> */}
         </div>
-      </nav>
-    </Layout>
+
+
+      </div>
+    </div>
   );
 }

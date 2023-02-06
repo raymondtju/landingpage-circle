@@ -8,11 +8,10 @@ import Bg2 from "/public/images/bg-2.png";
 import HeaderImage from "/public/images/header.png";
 import Button from "../Button";
 import Layout from "../Layout";
-import { PlayIcon } from "@heroicons/react/24/solid";
 
 export default function Header() {
   return (
-    <header>
+    <header className="">
       {/* <Image
         src={Moon}
         alt="moon"
@@ -24,7 +23,7 @@ export default function Header() {
         className="absolute w-full max-w-full overflow-hidden -z-[2]"
       /> */}
       <Navbar className="z-0" />
-      <div className="z-0">
+      <div className="mx-auto max-w-[1440px] z-0">
         <Layout>
           <div className="lg:w-6/12 lg:text-left text-center mt-[66px]">
             <h1 className="font-bold lg:text-[80px] lg:leading-[88px] text-[60px] leading-[60px] tracking-tighter">
@@ -39,11 +38,9 @@ export default function Header() {
               inspiration.
             </p>
           </div>
-          <div className="flex justify-center gap-6 mt-6 lg:justify-start">
+          <div className="flex gap-6 mt-6 lg:justify-start justify-center">
             <Button>Get a Demo</Button>
-            <Button primary={true} icon={<PlayIcon className="w-6 h-6" />}>
-              Watch a Video
-            </Button>
+            <Button primary={true}>Watch a Video</Button>
           </div>
           <Image
             src={HeaderImage}
