@@ -12,7 +12,7 @@ export default function Button({ children, className, icon, primary }) {
     : "ring-2 ring-[#0ED2F7] gap-1";
   return (
     <button
-      className={`flex flex-row p-3 px-6 text-base items-center font-medium ${primary} ${ibm.className} rounded-lg ${className}`}
+      className={`flex flex-row p-3 px-6 text-sm lg:text-base items-center font-medium ${primary} ${ibm.className} rounded-lg ${className}`}
     >
       <span>{children}</span>
       {icon}

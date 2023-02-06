@@ -10,8 +10,10 @@ const ibm = IBM_Plex_Sans({
 
 export default function TestimonialCard({ author, role, message }) {
   return (
-    <div className={`${ibm.className}`}>
-      <div className="px-10 w-[470px] pt-5 py-8 bg-[#151925] rounded-xl ring-[#151925] hover:ring-2 hover:ring-[#0ED2F7] duration-300 transition-all ease-in-out">
+    <div className={`${ibm.className} snap-center`}>
+      <div
+        className={`w-[470px] px-10 m-auto pt-5 py-8 bg-[#151925] rounded-xl ring-[#151925] hover:ring-2 hover:ring-[#0ED2F7] duration-300 transition-all ease-in-out`}
+      >
         <div class="flex items-center gap-4">
           <div className="block w-10 h-10 bg-white rounded-full"></div>
           <div className="flex flex-col">

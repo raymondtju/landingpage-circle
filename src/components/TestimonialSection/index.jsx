@@ -12,8 +12,8 @@ export default function TestimonialSection() {
             <span className="textGradient">{` Circle`}</span>
           </h3>
         </div>
-        <div className="py-1 overflow-hidden">
-          <div className="flex flex-col gap-6 mt-[72px] md:flex-row justify-center align-items-center pointer">
+        <div className="relative">
+          <div className="flex gap-6 mt-[72px] flex-row justify-start align-items-center pointer  overflow-scroll snap">
             <TestimonialCard
               author={"Leslie Alexander"}
               message={
