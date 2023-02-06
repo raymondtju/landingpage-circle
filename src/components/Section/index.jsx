@@ -40,12 +40,12 @@ export default function Section() {
       </div>
 
       {/* Section 2 */}
-      <div className="mt-[200px] ">
+      <div className="mt-[150px] lg:mt-[200px] ">
         <div className="flex flex-col lg:flex-row lg:justify-between">
-          <h3 className="lg:text-5xl text-4xl leading-[40px] lg:w-6/12 md:8/12 w-full lg:leading-[62px] font-bold text-center lg:text-left">
+          <h3 className="lg:text-5xl text-4xl leading-[40px] lg:leading-[62px] lg:w-6/12 md:8/12 w-full  font-bold text-center lg:text-left">
             Finally you can develop full-stack web applications in one place.
           </h3>
-          <p className="lg:w-4/12 lg:mt-0 mt-4 text-sm w-full text-center lg:text-left lg:text-lg text-textSecond">
+          <p className="w-full mt-4 text-sm text-center lg:w-4/12 lg:mt-0 lg:text-left lg:text-lg text-textSecond">
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit. Exercitation
             veniam consequat sunt nostrud amet.Amet minim mollit non deserunt
@@ -74,31 +74,31 @@ export default function Section() {
       </div>
 
       {/* Section 3 */}
-      <div className="mt-[200px]">
+      <div className="-mt-[100px] lg:mt-[200px]">
         <div className="flex flex-col">
           <Image
             src={Image3}
             alt="section-img3"
-            className="mx-auto flex mt-64 xl:absolute xl:right-0 transition-all duration-300 ease-in-out"
+            className="flex mx-auto mt-64 transition-all duration-300 ease-in-out xl:absolute xl:right-0"
           />
           {/* <Image
             src={Smallmoon}
             alt="small-moon"
             className="absolute flex mt-28 -right-20"
           /> */}
-          <h3 className="xl:text-left text-center xl:text-5xl text-4xl w-full xl:w-8/12 leading-[40px] xl:leading-[62px] font-bold xl:mt-0 mt-4">
+          <h3 className="xl:text-left text-center xl:text-5xl text-4xl w-full xl:w-8/12 leading-[42px] xl:leading-[62px] font-bold xl:mt-0 mt-4">
             Circle provides teams and individuals with customizable
             <span className="textGradient">{` management tools `}</span>
             for your source code.
           </h3>
-          <p className="xl:w-5/12 lg:w-7/12 md:w-9/12 w-full mt-6 xl:text-lg text-sm xl:text-left mx-auto xl:mx-0 text-center text-textSecond">
+          <p className="w-full mx-auto mt-6 text-sm text-center xl:w-5/12 lg:w-7/12 md:w-9/12 xl:text-lg xl:text-left xl:mx-0 text-textSecond">
             Create issues, sections into tasks, track relationships, add custom
             spaces, and initiate discussions. Visualize large projects with
             spreadsheets or codeboards, and use the help of code systems to
             automate everything.
           </p>
         </div>
-        <div className="flex flex-row gap-6 mt-10 xl:justify-start justify-center">
+        <div className="flex flex-row justify-center gap-6 mt-10 xl:justify-start">
           <Button className="">Get Started</Button>
           <Button className="" primary>
             Watch a Video
@@ -107,9 +107,9 @@ export default function Section() {
       </div>
 
       {/* Section 4 */}
-      <div className="mt-[450px]">
+      <div className="mt-[150px] lg:mt-[450px]">
         <div className="flex flex-col">
-          <h3 className="lg:w-6/12 lg:mx-auto w-full font-bold text-center text-5xl lg:text-7xl">
+          <h3 className="w-full text-4xl font-bold text-center lg:w-6/12 lg:mx-auto lg:text-7xl">
             Useful
             <span className="textGradient">{` software `}</span>
             that can assist.
@@ -124,12 +124,12 @@ export default function Section() {
       </div>
 
       {/* Section 5 */}
-      <div className="mt-[200px]">
-        <div className="lg:w-8/12 w-full mx-auto">
-          <h3 className="lg:text-5xl lg:leading-[62px] text-3xl font-bold text-center">
+      <div className="mt-[150px] lg:mt-[200px]">
+        <div className="w-full mx-auto lg:w-8/12">
+          <h3 className="lg:text-5xl lg:leading-[62px] text-4xl font-bold text-center">
             Concentrate on larger issues.
           </h3>
-          <p className="lg:w-10/12 mt-6 mx-auto lg:text-lg text-base text-textSecond text-center">
+          <p className="mx-auto mt-6 text-base text-center lg:w-10/12 lg:text-lg text-textSecond">
             Spend less time on repetitive code patterns and more time on what
             really matters building great software.
           </p>

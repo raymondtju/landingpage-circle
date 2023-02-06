@@ -3,7 +3,7 @@ import Layout from "../Layout";
 
 export default function Footer() {
   return (
-    <footer className="p-4 sm:p-6 mt-[300px]">
+    <footer className="p-4 sm:p-6 mt-[150px] lg:mt-[300px]">
       <Layout>
         <div className="flex justify-end">
           <div className="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
@@ -54,7 +54,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="sm:flex sm:items-center justify-end mt-16">
+        <div className="justify-end mt-16 sm:flex sm:items-center">
           <span className="text-sm sm:text-center">
             © 2023{" "}
             <a href="" className="hover:underline">
