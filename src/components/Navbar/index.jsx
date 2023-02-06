@@ -36,7 +36,7 @@ export default function Navbar() {
             </button>
           </div>
           <div className="hidden w-full lg:flex lg:w-auto lg:order-1" id="hehe">
-            <ul className="flex flex-col float-right py-4 px-8 pr-4 mt-4 gap-y-1 text-right lg:bg-none bg-[#151925] rounded-lg lg:flex-row lg:space-x-6 lg:mt-0 lg:font-medium">
+            <ul className="flex flex-col float-right py-4 px-8 pr-4 mt-4 gap-y-1 text-right lg:bg-black  bg-[#151925] rounded-lg lg:flex-row lg:space-x-6 lg:mt-0 lg:font-medium">
               <li className="transition-transform duration-300 hover:scale-95">
                 <Link href="">How It Works?</Link>
               </li>
