@@ -4,6 +4,69 @@
 
 @layer components {
   .textGradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#B2FEFA] to-[#0ED2F7];
+    @apply bg-gradient-to-r from-[#B2FEFA] to-[#0ED2F7] bg-clip-text text-transparent;
+  }
+
+  .gradientPurple {
+    @apply absolute right-0 z-[-1] h-[361px] w-[492px] rounded-full bg-[#9733EE] opacity-30 blur-[135px];
+  }
+
+  .gradientGreen {
+    @apply absolute left-0 z-[-1] h-[361px] w-[492px] rounded-full bg-[#12FFF7] opacity-30 blur-[156px];
+  }
+}
+
+@layer utilities {
+  .btn-shadow {
+    position: absolute;
+    width: 100px;
+    height: 61px;
+    top: -7px;
+    left: 25px;
+
+    background: linear-gradient(90deg, #b2fefa 0%, #0ed2f7 100%);
+    opacity: 0.6;
+    filter: blur(26px);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: -1;
+  }
+
+  .moon-shadow {
+    position: absolute;
+    width: 800px;
+    height: 800px;
+    top: -270px;
+    right: -170px;
+
+    background: linear-gradient(90deg, #0ed2f7 0%, #b2fefa 100%);
+    filter: blur(50px);
+
+    background-blend-mode: screen;
+    mix-blend-mode: screen;
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    z-index: -1;
+  }
+
+  .bg-moon {
+    background-image: url("/images/moon.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: right top;
+    width: 100%;
+    box-shadow: #0ed2f7;
+  }
+
+  .bg-galaxy {
+    background-image: url("/images/2.png");
+    right: 0;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
   }
 }

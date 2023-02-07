@@ -19,6 +19,14 @@ module.exports = {
       maxWidth: {
         1440: "1440px",
       },
+      backgroundImage: {
+        "bg-2": "url('/images/bg-2.png')",
+        // moon: "url('/icons/moon.svg')",
+      },
+      screens: {
+        "144w": "1440px",
+        mini: "100px",
+      },
     },
   },
   plugins: [require("flowbite/plugin"), require("prettier-plugin-tailwindcss")],
