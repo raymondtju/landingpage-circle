@@ -11,7 +11,7 @@ export default function Button({ children, className, icon, primary }) {
     : "border-2 border-[#0ED2F7] gap-1 hover:bg-[#0ED2F7] hover:text-black";
   return (
     <button
-      className={`flex flex-row p-3 px-6 text-sm lg:text-base items-center font-medium transition-colors duration-150 ${primary} ${ibm.className} rounded-lg ${className}`}
+      className={`flex flex-row items-center p-3 px-6 text-sm font-medium transition-colors duration-150 lg:text-base ${primary} ${ibm.className} rounded-lg ${className}`}
     >
       <span>{children}</span>
       {icon}

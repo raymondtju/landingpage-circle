@@ -12,10 +12,10 @@ export default function TestimonialCard({ author, role, message }) {
   return (
     <div className={`${ibm.className} snap-center`}>
       <div
-        className={`w-[470px] px-10 m-auto pt-5 py-8 bg-[#151925] rounded-xl ring-[#151925] hover:ring-2 hover:ring-[#0ED2F7] duration-300 transition-all ease-in-out`}
+        className={`m-auto w-[470px] rounded-xl bg-[#151925] px-10 py-8 pt-5 ring-[#151925] transition-all duration-300 ease-in-out hover:ring-2 hover:ring-[#0ED2F7]`}
       >
         <div className="flex items-center gap-4">
-          <div className="block w-10 h-10 bg-white rounded-full"></div>
+          <div className="block h-10 w-10 rounded-full bg-white"></div>
           <div className="flex flex-col">
             <strong>{author}</strong>
             <span className="text-textSecond">{role}</span>
@@ -23,11 +23,11 @@ export default function TestimonialCard({ author, role, message }) {
         </div>
         <p className="mt-5 text-base text-textSecond">{`${message}`}</p>
         <div className="flex flex-row gap-1">
-          <StarIcon className="w-6 h-6 mt-5 fill-textGradient" />
-          <StarIcon className="w-6 h-6 mt-5 fill-textGradient" />
-          <StarIcon className="w-6 h-6 mt-5 fill-textGradient" />
-          <StarIcon className="w-6 h-6 mt-5 fill-textGradient" />
-          <StarIcon className="w-6 h-6 mt-5 fill-textGradient" />
+          <StarIcon className="fill-textGradient mt-5 h-6 w-6" />
+          <StarIcon className="fill-textGradient mt-5 h-6 w-6" />
+          <StarIcon className="fill-textGradient mt-5 h-6 w-6" />
+          <StarIcon className="fill-textGradient mt-5 h-6 w-6" />
+          <StarIcon className="fill-textGradient mt-5 h-6 w-6" />
         </div>
       </div>
     </div>

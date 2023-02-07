@@ -8,8 +8,8 @@ export default function Brand() {
   return (
     <Layout>
       <div className="mt-[116px]">
-        <div className="lg:w-5/12 md:7/12 mx-auto">
-          <h1 className="text-lg text-center">
+        <div className="md:7/12 mx-auto lg:w-5/12">
+          <h1 className="text-center text-lg">
             {`Providing power to the world's best product teams. From
             next-generation startups to established businesses`}
           </h1>

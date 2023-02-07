@@ -20,23 +20,23 @@ export default function Navbar() {
           <Image src={Circle} alt="logo" className="" />
 
           <div className="flex lg:order-2">
-            <button className="lg:p-3 p-1 lg:px-6 px-3 rounded-lg bg-[#151925] ring-[#B3FFAB] lg:text-base text-sm ring-2 flex flex-row items-center gap-1">
+            <button className="flex flex-row items-center gap-1 rounded-lg bg-[#151925] p-1 px-3 text-sm ring-2 ring-[#B3FFAB] lg:p-3 lg:px-6 lg:text-base">
               Lets Building - Its Free
-              <ArrowSmallRightIcon className="w-6 h-6" />
+              <ArrowSmallRightIcon className="h-6 w-6" />
             </button>
             <button
               data-collapse-toggle="hehe"
               type="button"
-              className="inline-flex items-center p-2 ml-2 text-sm text-gray-500 rounded-lg lg:hidden"
+              className="ml-2 inline-flex items-center rounded-lg p-2 text-sm text-gray-500 lg:hidden"
               aria-controls="hehe"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
-              <Bars3BottomRightIcon className="w-6 h-6" />
+              <Bars3BottomRightIcon className="h-6 w-6" />
             </button>
           </div>
-          <div className="hidden w-full lg:flex lg:w-auto lg:order-1" id="hehe">
-            <ul className="flex flex-col float-right py-4 px-8 pr-4 mt-4 gap-y-1 text-right lg:bg-black  bg-[#151925] rounded-lg lg:flex-row lg:space-x-6 lg:mt-0 lg:font-medium">
+          <div className="hidden w-full lg:order-1 lg:flex lg:w-auto" id="hehe">
+            <ul className="float-right mt-4 flex flex-col gap-y-1 rounded-lg bg-[#151925] py-4 px-8 pr-4  text-right lg:mt-0 lg:flex-row lg:space-x-6 lg:bg-black lg:font-medium">
               <li className="transition-transform duration-300 hover:scale-95">
                 <Link href="">How It Works?</Link>
               </li>
