@@ -20,10 +20,10 @@ export default function Navbar() {
             <Image src={Circle} alt="logo" />
           </Link>
 
-          <div className="flex lg:order-2">
+          <div className="flex group lg:order-2">
             <button className="flex flex-row items-center gap-1 rounded-lg bg-[#151925] p-1 px-3 text-sm ring-2 ring-[#B3FFAB] lg:p-3 lg:px-6 lg:text-base">
               Lets Building - Its Free
-              <ArrowSmallRightIcon className="w-6 h-6" />
+              <ArrowSmallRightIcon className="w-6 h-6 duration-150 group-hover:translate-x-2" />
             </button>
             <button
               data-collapse-toggle="hehe"

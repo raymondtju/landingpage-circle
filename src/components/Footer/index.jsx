@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../Layout";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -54,13 +55,19 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-16 justify-end sm:flex sm:items-center">
+        <div className="justify-end mt-16 sm:flex sm:items-center">
           <span className="text-sm sm:text-center">
             © 2023{" "}
             <a href="" className="hover:underline">
               Circle™
             </a>
-            . All Rights Reserved.
+            . All Rights Reserved. Build by
+            <Link
+              className="font-bold text-textSecond"
+              href={"https://github.com/raymondtju"}
+            >
+              {" @Ferropayo"}
+            </Link>
           </span>
         </div>
       </Layout>
