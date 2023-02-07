@@ -3,29 +3,21 @@ import Navbar from "../Navbar";
 import Image from "next/image";
 
 import Moon from "/public/icons/moon.svg";
-import Bg2 from "/public/images/bg-2.png";
 
 import HeaderImage from "/public/images/header.png";
 import Button from "../Button";
 import Layout from "../Layout";
 import { PlayIcon } from "@heroicons/react/24/solid";
+import Brand from "../Brand";
 
 export default function Header() {
   return (
-    <header>
-      {/* <Image
-        src={Moon}
-        alt="moon"
-        className="absolute right-0 bg-contain -z-[1] overflow-hidden"
-      />
-      <Image
-        src={Bg2}
-        alt="bg2"
-        className="absolute w-full max-w-full overflow-hidden -z-[2]"
-      /> */}
-      <Navbar className="z-0" />
-      <div className="z-0">
-        <Layout>
+    <header className="bg-moon relative overflow-hidden">
+      <div className="moon-shadow overflow-hidden rounded-full"></div>
+      <Navbar />
+
+      <Layout>
+        <div className="z-0">
           <div className="mt-[66px] text-center lg:w-6/12 lg:text-left">
             <h1 className="text-[60px] font-bold leading-[60px] tracking-tighter lg:text-[80px] lg:leading-[88px]">
               <span className="bg-gradient-to-r from-[#B2FEFA] to-[#0ED2F7] bg-clip-text text-transparent">
@@ -40,7 +32,10 @@ export default function Header() {
             </p>
           </div>
           <div className="mt-6 flex justify-center gap-6 lg:justify-start">
-            <Button>Get a Demo</Button>
+            <div className="relative">
+              <Button className="z-[1] bg-black">Get a Demo</Button>
+              <div className="btn-shadow"></div>
+            </div>
             <Button primary={true} icon={<PlayIcon className="h-6 w-6" />}>
               Watch a Video
             </Button>
@@ -48,10 +43,12 @@ export default function Header() {
           <Image
             src={HeaderImage}
             alt="header-image"
-            className="mt-[116px] flex max-w-full overflow-hidden"
+            className="mx-auto mt-[116px] flex max-w-full"
           />
-        </Layout>
-      </div>
+        </div>
+      </Layout>
+
+      <Brand />
     </header>
   );
 }

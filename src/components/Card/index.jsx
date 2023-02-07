@@ -20,7 +20,7 @@ export default function Card({ buttonVal, title, desc, image }) {
         </h3>
         <p className="mx-8 mt-2 text-sm text-textSecond lg:mx-10 lg:mt-3 lg:text-base">{`${desc}`}</p>
         <Button
-          className={`mx-8 mt-4 gap-1 border-none px-0 lg:mx-10 lg:mt-10`}
+          className={`mx-8 mt-4 gap-1 border-none bg-transparent px-0 hover:underline lg:mx-10 lg:mt-10`}
           icon={<ArrowRightIcon className="h-4 lg:h-6 lg:w-6" />}
         >
           Read More
@@ -29,7 +29,7 @@ export default function Card({ buttonVal, title, desc, image }) {
           <Image
             src={Image3}
             alt="image3"
-            className="right-0 mx-auto hidden w-8/12 justify-end lg:flex"
+            className="right-0 justify-end hidden w-8/12 mx-auto lg:flex"
           />
         )}
       </div>

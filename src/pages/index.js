@@ -18,13 +18,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className={`${inter.className} pb-10`}>
+      <main
+        className={`${inter.className} bg-galaxy overflow-hidden 144w:bg-contain`}
+      >
         <Header />
-        <Brand />
         <Layout>
           <Section />
+          <TestimonialSection />
         </Layout>
-        <TestimonialSection />
         <Footer />
       </main>
     </>
