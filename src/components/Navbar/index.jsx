@@ -41,23 +41,23 @@ export default function Navbar() {
               <li className="transition-transform duration-300 hover:scale-95">
                 <Link href="">How It Works?</Link>
               </li>
-              <li className="transition-transform duration-300 hover:scale-95">
-                <Link href="">Develop</Link>
+              <li className="transition-transform duration-300 text-textSecond hover:scale-95">
+                <Link href="#develop">Develop</Link>
               </li>
-              <li className="transition-transform duration-300 hover:scale-95">
-                <Link href="">Features</Link>
+              <li className="transition-transform duration-300 text-textSecond hover:scale-95">
+                <Link href="#features">Features</Link>
               </li>
-              <li className="transition-transform duration-300 hover:scale-95">
-                <Link href="">Docs</Link>
+              <li className="transition-transform duration-300 text-textSecond hover:scale-95">
+                <Link href="#documentation">Docs</Link>
               </li>
-              <li className="transition-transform duration-300 hover:scale-95">
-                <Link href="">Result</Link>
+              <li className="transition-transform duration-300 text-textSecond hover:scale-95">
+                <Link href="#result">Result</Link>
               </li>
-              <li>
-                <Link href="">Blog</Link>
+              <li className="transition-transform duration-300 text-textSecond hover:scale-95">
+                <Link href="#blog">Blog</Link>
               </li>
-              <li className="transition-transform duration-300 hover:scale-95">
-                <Link href="">About</Link>
+              <li className="transition-transform duration-300 text-textSecond hover:scale-95">
+                <Link href="#about">About</Link>
               </li>
             </ul>
           </div>

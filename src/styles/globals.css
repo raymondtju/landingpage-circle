@@ -34,7 +34,7 @@
     z-index: -1;
   }
 
-  .moon-shadow {
+  /* .moon-shadow {
     position: absolute;
     width: 800px;
     height: 800px;
@@ -51,19 +51,19 @@
     order: 0;
     flex-grow: 0;
     z-index: -1;
-  }
+  } */
 
-  .bg-moon {
+  /* .bg-moon {
     background-image: url("/images/moon.png");
     background-repeat: no-repeat;
     background-size: auto;
     background-position: right top;
     width: 100%;
     box-shadow: #0ed2f7;
-  }
+  } */
 
   .bg-galaxy {
-    background-image: url("/images/2.png");
+    background-image: url("/images/bg.png");
     right: 0;
     background-repeat: no-repeat;
     background-position: center top;
